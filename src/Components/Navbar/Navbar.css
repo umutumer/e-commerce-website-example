@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(245, 245, 245);
+}
+.navbar-link{
+    display: flex;
+}
+.navbar-link li{
+    list-style: none;
+    margin-right: 20px;
+}
+.navbar-icon{
+    font-size: 30px;
+    margin-right: 20px;
+}
+.navbar-link li:hover,.icon:hover{
+    transition: ease-in-out .3s;
+    color: rgb(199, 0, 0);
+    cursor: pointer;
+}

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home-picture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+      height: 500px;
+      color: white;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.home-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+}
+.home-icon-div{
+    margin: 20px 30px;
+}
+.home-icon{
+    font-size: 40px;
+    margin: 10px;
+    color: rgb(199, 0, 0);
+}
