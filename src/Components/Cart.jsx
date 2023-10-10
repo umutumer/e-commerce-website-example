@@ -19,7 +19,7 @@ const Cart = () => {
       ></button>
       <div className="cart-container">
         <div className="cart-title">
-          <h2>Sepetim</h2>
+          <h2>Cart</h2>
           <button onClick={toggleCartVisibility}>X</button>
         </div>
         <div className="cart-content">
@@ -35,6 +35,7 @@ const Cart = () => {
         </div>
         {cartItemCount > 0 &&
         <button className="pay-btn">Pay Now</button>}
+        {cartItemCount === 0 && <p style={{color: "GrayText"}} >Cart is Empty</p> }
       </div>
     </div>
   );
