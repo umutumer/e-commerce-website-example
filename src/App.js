@@ -1,16 +1,20 @@
-
-import './App.css';
-import Home from './Components/Home/Home';
-import Navbar from './Components/Navbar/Navbar';
-import { Data } from './Data/Data';
+import React from "react";
+import { ProductProvider } from "./Components/ProductContext";
+import ProductList from "./Components/ProductList";
+import Cart from "./Components/Cart";
+import Navbar from "./Components/Navbar";
+import Home from "./Components/Home";
 
 function App() {
-
   return (
-    <div className="App">
-     <Navbar/>
-     <Home data ={Data} />
-    </div>
+    <ProductProvider>
+      <div>
+        <Navbar />
+        <Home />
+        <ProductList />
+        <Cart />
+      </div>
+    </ProductProvider>
   );
 }
 

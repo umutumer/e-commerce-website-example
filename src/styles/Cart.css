@@ -1,0 +1,20 @@
+.cart-container{
+    background-color: rgb(245, 245, 245);
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right:0;
+}
+.cart-title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.cart-title button{
+    width: 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(245, 245, 245);
+}

@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+.product-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
 .product-card-container{
     position: relative;
     display: flex;
@@ -22,7 +30,7 @@
     margin: 10px;
     font-size: 20px;
 }
-.product-card-container button{
+.product-cart-btn{
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -36,7 +44,21 @@
     color: white;
     cursor: pointer;
 }
-.product-card-container button:hover{
+.product-cart-btn:hover{
     box-shadow: 0px 0px 19px 0px rgba(209,0,0,1);
     transition: ease-in-out .3s;
+}
+.heart-btn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: x-large;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
 }

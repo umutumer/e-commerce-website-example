@@ -1,9 +1,8 @@
 import { BiSolidTruck, BiHappyBeaming } from "react-icons/bi";
 import { RiSecurePaymentFill } from "react-icons/ri";
-import background from "./banner.jpg";
-import "./Home.css";
-import ProductContent from "../ProductContent/ProductContent";
-const Home = ({data}) => {
+import background from "../images/banner.jpg";
+import '../styles/Home.css'
+const Home = () => {
 
   return (
     <div>
@@ -32,7 +31,6 @@ const Home = ({data}) => {
         </div>
       </div>
       <div className="home-product-container">
-        <ProductContent data={data} />
       </div>
     </div>
   );
