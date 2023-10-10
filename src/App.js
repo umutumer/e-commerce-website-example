@@ -4,6 +4,7 @@ import ProductList from "./Components/ProductList";
 import Cart from "./Components/Cart";
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
+import UserLogin from "./Components/UserLogin";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Home />
         <ProductList />
         <Cart />
+        <UserLogin />
       </div>
     </ProductProvider>
   );
