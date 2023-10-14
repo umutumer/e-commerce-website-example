@@ -24,11 +24,11 @@ const Cart = () => {
         </div>
         <div className="cart-content">
           <ul>
-            {cart.map((product) => (
-              <li key={product.id}>
-                <img src={product.productImg} alt="" />
-                <h3>{product.productName}</h3>
-                <p>Fiyat: ${product.productPrice}</p>
+            {cart.map((car) => (
+              <li key={car.id}>
+                <img src={car.productImg} alt="" />
+                <h3>{car.productName}</h3>
+                <p>Fiyat: ${car.productPrice}</p>
               </li>
             ))}
           </ul>

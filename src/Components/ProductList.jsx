@@ -1,6 +1,7 @@
 import React from "react";
 import { useProduct } from "./ProductContext";
 import '../styles/ProductList.css'
+import 'react-toastify/dist/ReactToastify.css';
 
 const ProductList = () => {
   const { productsData, addToCart } = useProduct();

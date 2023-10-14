@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState } from "react";
 import products from "../data/Data";
+import { toast } from "react-toastify";
 
 const ProductContext = createContext();
 
@@ -17,6 +18,16 @@ export const ProductProvider =  ({ children }) => {
     if (product) {
       setCart([...cart, product]);
       setCartItemCount(cartItemCount + 1);
+      toast.success('🛒 Sepete Eklendi!', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
     }
   };
   const toggleCartVisibility = () => {
