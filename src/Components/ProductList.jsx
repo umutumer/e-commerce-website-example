@@ -15,7 +15,7 @@ const ProductList = () => {
             <img src={product.productImg} alt="" />
             <h3>{product.productName}</h3>
             <p>Fiyat: ${product.productPrice}</p>
-            <button className='product-cart-btn' onClick={() => addToCart(product.id)}>Sepete Ekle</button>
+            <button className='product-cart-btn' onClick={() => addToCart(product.id)}>Add To Cart</button>
           </li>
         ))}
       </ul>
